@@ -1,7 +1,5 @@
 library(shiny)
-library(tidyverse)
-library(rsconnect)
-library(wesanderson)
+# library(rsconnect)  # Only needed for deployment
 
 
 #------------------------------------------------------
