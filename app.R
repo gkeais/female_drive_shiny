@@ -161,6 +161,7 @@ ui <- pageWithSidebar(
   ),
   mainPanel =  mainPanel(
     verbatimTextOutput("validation_message"),
+    uiOutput("download_ui"),
     plotOutput(outputId = 'model_plot'),
     plotOutput(outputId = 'males_females_plot'),
     plotOutput(outputId = 'X_Xd_plot')
@@ -226,6 +227,31 @@ server <- function(input, output){
       ""
     }
   })
+  
+  
+  output$download_ui <- renderUI({
+    df <- model_output()
+    if (!is.null(df)) {
+      downloadButton("download_data", "Download Data")
+    }
+  })
+  
+  
+  output$download_data <- downloadHandler(
+    filename = function() {
+      paste("meiotic_drive_data_", Sys.Date(), ".csv", sep = "")
+    },
+    content = function(file) {
+      df <- model_output()
+      if (!is.null(df)) {
+        # Add a generation column
+        df$generation <- 1:nrow(df)
+        # Reorder columns to put generation first
+        df <- df[, c("generation", names(df)[names(df) != "generation"])]
+        write.csv(df, file, row.names = FALSE)
+      }
+    }
+  )
   
   
   output$model_plot <- renderPlot({
