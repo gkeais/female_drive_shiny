@@ -28,3 +28,4 @@ Keais GL, Saad-Roy CM, Gonzalez-Sqalli E, Powell CN, Rieseberg LH, Gawryluk RMR,
 - **Genotype frequencies**: XX, X<sup>D</sup>X, X<sup>D</sup>X<sup>D</sup>, XY, X<sup>D</sup>Y over time
 - **Sex ratio**: Males vs. females
 - **Allele frequencies**: X vs. X<sup>D</sup>
+- downloadable data from the current run as a csv
