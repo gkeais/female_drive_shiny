@@ -1,6 +1,6 @@
 # Meiotic Drive Model - Shiny App
 
-Interactive population genetics model for exploring X chromosome drive dynamics.
+Interactive population genetics model for exploring X chromosome drive dynamics in *Drosophila*.
 
 **Live App**: https://gkeais.shinyapps.io/drive_model_app/
 
@@ -20,12 +20,11 @@ Keais GL, Saad-Roy CM, Gonzalez-Sqalli E, Powell CN, Rieseberg LH, Gawryluk RMR,
 ### Running the Model
 
 1. Adjust parameter sliders
-2. Ensure starting genotype frequencies sum to 1.0
+2. Ensure starting frequencies sum to 1.0
 3. Click **"Run model"**
 
 ### Outputs
 
-- **Genotype frequencies**: XX, X^D^X, X^D^X^D^, XY, X^D^Y over time
+- **Genotype frequencies**: XX, X<sup>D</sup>X, X<sup>D</sup>X<sup>D</sup>, XY, X<sup>D</sup>Y over time
 - **Sex ratio**: Males vs. females
-- **Allele frequencies**: X vs. X^D^
-
+- **Allele frequencies**: X vs. X<sup>D</sup>
