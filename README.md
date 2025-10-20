@@ -1,6 +1,6 @@
 # Meiotic Drive Model - Shiny App
 
-Interactive population genetics model for exploring X chromosome drive dynamics in *Drosophila*.
+Interactive population genetics model for exploring X chromosome drive dynamics.
 
 **Live App**: https://gkeais.shinyapps.io/drive_model_app/
 
